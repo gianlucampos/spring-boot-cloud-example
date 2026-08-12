@@ -1,4 +1,4 @@
-package com.github.gianlucampos.springbootcloudexample.config;
+package com.github.gianlucampos.springbootcloudexample.kafka.properties;
 
 import java.util.Map;
 import lombok.Getter;

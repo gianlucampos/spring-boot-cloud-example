@@ -24,3 +24,12 @@ management:
     web:
       exposure:
         include: health,refresh,busrefresh
+
+kafka:
+  aws:
+    bootstrap-servers: localhost:9092
+    group-id: consumer-aws
+
+  gcp:
+    bootstrap-servers: localhost:9094
+    group-id: consumer-gcp
