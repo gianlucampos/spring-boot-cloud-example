@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class KafkaRefreshListener {
 
-    private final KafkaListenerManager kafkaListenerManager;
+    private final KafkaConsumerManager kafkaConsumerManager;
 
     @EventListener
     public void onRefresh(RefreshScopeRefreshedEvent event) {
-        kafkaListenerManager.restartListeners();
+        kafkaConsumerManager.refreshConsumers();
     }
 }
